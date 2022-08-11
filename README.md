@@ -1,2 +1,2 @@
-# About
+# About me
 First django project(Portfolio)
