@@ -91,7 +91,6 @@ input[type=checkbox]{
 }
 .menu li:hover {
     display: inline-block;
-    background-color:#4c9e9e;
     transition: 0.3s ease;
 }
 .menu li + li {
@@ -112,27 +111,41 @@ input[type=checkbox]:checked ~ .menu{
     background-color: #4c9e9e;
 }
 }
-svg:hover{
+.social img:hover{
     transform: scale(1.1);
 }
 /* Text */
+.hero_main {
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: 100px;
+    grid-template-areas:
+        "a a a a b b b b"
+        "c c c c b b b b"
+        "d d d d e e e e"
+        "d d d d e e e e";
+    align-items: start;
+    align-content: space-between;
+}
 .heading {
-    margin-top: 250px;
-    margin-bottom: 20px;
-    margin-left: 150px;
-    max-width: 630px;
+    margin-left: 80px;
+    max-width: 720px;
+    width: 80%;
     font-family: Georgia, Times, 'Times New Roman', serif;
     color: #fff;
     border-style: hidden;
     background: linear-gradient(90deg, #FC466B, #3F5EFB);
     border-radius: 12px;
     padding: 7px;
+    grid-area: a;
 }
 .text_block{
-    margin-top: 30px;
-    margin-bottom: 20px;
-    margin-left: 150px;
-    max-width: 500px;
+    margin-left: 80px;
+    margin-top: 10px;
+    max-width: 650px;
+    width: 80%;
     color: #fff;
     font-family: Avenir, sans-serif;
     font-size: x-large;
@@ -140,9 +153,19 @@ svg:hover{
     background: linear-gradient(90deg, #FC466B, #3F5EFB);
     border-radius: 12px;
     padding: 7px;
+    grid-area: c;
+}
+.hero_image{
+    margin-left: 150px;
+    margin-top: -80px;
+    width: 50%;
+    grid-area: b;
+    align-self: start;
 }
 .large_button{
-    margin-right: 330px;
+    position: absolute;
+    margin-left: 80px;
+    margin-top: 10px;
     transition: transform .6s ease;
     font-size: 24px;
     float: left;
@@ -150,13 +173,33 @@ svg:hover{
     border: 3px solid #4c9e9e;
     border-radius: 15px;
     padding: 10px;
+    grid-area: e;
+}
+@media only screen and (max-width: 750px) {
+  .hero_image {
+    margin-top: -150px;
+    margin-left: 90px;
+    grid-area: a;
+    align-self: center;
+  }
+  .heading {
+    grid-area: b;
+    align-self: start;
+    margin-left: 30px;
+    margin-top: -100px;
+  }
+  .text_block{
+    grid-area: e;
+    align-self: start;
+    margin-left: 30px;
+    margin-top: -150px;
+  }
+  .large_button{
 }
 .large_button:hover{
     transform: scale(1.05);
     float: left;
     box-sizing: border-box;
 }
-.hero_image{
-    position:relative;
-    object-position: left top;
-}
+
+
