@@ -9,6 +9,7 @@
     {% load static %}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'main/images/favicon.ico' %}"/>
     <title>Zavyalov</title>
 </head>
 <body>
@@ -41,22 +42,65 @@
      </ul>
    </nav>
 </div>
-    <div class="hero_main">
-        <div class="heading">
-            <h3>Привет, я Илья, начинающий Python-разработчик!</h3>
-        </div>
-        <div class="text_block">
-            Я нахожусь в начале своего пути,
-            но, в перспективе, буду специалистом в этой сфере.
-            Меня вдохновляет творческое самовыражение,
-            и я всегда открыт для изучения новых возможностей.
-        </div>
-        <div class="hero_image">
-            <img src="{% static 'main/images/hero.png' %}" alt="It's me" width="100%"/>
-        </div>
+<div class="hero_main">
+    <div class="heading">
+        <h3>Привет, я Илья, начинающий Python-разработчик!</h3>
     </div>
-<div class="large_button">
-    <a href="/"><p>Связаться</p></a>
+    <div class="text_block">
+        Я нахожусь в начале своего пути,
+        но, в перспективе, буду специалистом в этой сфере.
+        Меня вдохновляет творческое самовыражение,
+        и я всегда открыт для изучения новых возможностей.
+    </div>
+    <div class="hero_image">
+        <img src="{% static 'main/images/hero.png' %}" alt="It's me" width="100%"/>
+    </div>
+</div>
+<div class="work_with" align="center" >
+    <img src="{% static 'main/images/python-5.svg' %}" alt="PY"/>
+    <img src="{% static 'main/images/postgresql.svg' %}" alt="PSQL"/>
+    <img src="{% static 'main/images/django.svg' %}" alt="DJ"/>
+    <img src="{% static 'main/images/css-3.svg' %}" alt="CSS"/>
+    <img src="{% static 'main/images/html5-2.svg' %}" alt="HTML"/>
+</div>
+<div class="content">
+    <div class="Main_me">
+        <h2 class="Top">Коротко обо мне</h2>
+        <p class="paragraph-1">
+            Мне нравится создавать и организовывать, будь это программное обеспечение или что-либо.
+            <br>
+        </p>
+        <p class="paragraph-2">
+            Начал изучать Python в конце 2021 года для студенческого проекта по оптимизации
+            и поймал себя на мысли, что программирование - это интересно.
+        </p>
+        <p class="paragraph-3">
+            Данный сайт, будет моей первой работой в портфолио на
+            <a class="link" href="https://github.com/zovikk">GitHub,</a>
+            которое я буду постепенно пополнять.
+        </p>
+        <p class="paragraph-4">
+            Последние свои новости я буду выклыдвать во вкладке
+            <a class="link" href="/">Blog</a>.
+        </p>
+        <p class="paragraph-5">
+            В свободное время я люблю заниматься спортом, готовить и
+            участвовать в походах.
+        </p>
+    <div class="location">
+        <p class="loc">
+            Текущее местоположение: Россия, Томск
+        </p>
+    </div>
+    <div class="Top2">
+        <h3 class="Main2">Интересующие меня проекты и возможности</h3>
+        <ul class="list1">
+            <li>Программное обеспечение, которое позволяет креативить</li>
+            <li>Веб-разработка</li>
+        </ul>
+    </div>
+    </div>
+
 </div>
 </body>
 </html>

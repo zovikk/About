@@ -162,44 +162,70 @@ input[type=checkbox]:checked ~ .menu{
     grid-area: b;
     align-self: start;
 }
-.large_button{
-    position: absolute;
-    margin-left: 80px;
-    margin-top: 10px;
-    transition: transform .6s ease;
-    font-size: 24px;
-    float: left;
-    overflow: hidden;
-    border: 3px solid #4c9e9e;
-    border-radius: 15px;
-    padding: 10px;
-    grid-area: e;
+
+.work_with img{
+    width: 90px;
+    height: 90px;
+}
+.work_with{
+    margin: auto;
+    max-width: 500px;
+    border-style: hidden;
+    background: linear-gradient(90deg, #FC466B, #3F5EFB);
+    border-radius: 12px;
+    padding: 7px;
+}
+@media only screen and (max-width: 1200px) {
+  .hero_image {
+    transform: translate(-70px,80px);
+    -webkit-transform: translate(-70px,80px);
+    -o-transform: translate(-70px,80px);
+    -moz-transform: translate(-70px,80px);
+    transition: 1s ease;
+    }
+}
+@media only screen and (max-width: 1100px) {
+  .heading {
+  font-size: large;
+  }
+  .text_block{
+  font-size: large;
+  }
+  .work_with{
+    max-width: 400px;
+    transition: 1s ease;
+  }
+  .work_with img{
+    width: 70px;
+    height: 70px;
+    max-width: 200px;
+    transition: 1s ease;
+  }
 }
 @media only screen and (max-width: 750px) {
   .hero_image {
     margin-top: -150px;
-    margin-left: 90px;
+    margin-left: 120px;
     grid-area: a;
+    width:80%;
     align-self: center;
+    transition: 1s ease;
   }
   .heading {
     grid-area: b;
     align-self: start;
     margin-left: 30px;
     margin-top: -100px;
+    transition: 1s ease;
   }
   .text_block{
     grid-area: e;
     align-self: start;
     margin-left: 30px;
     margin-top: -150px;
+    transition: 1s ease;
   }
-  .large_button{
+  .work_with{
+    margin-top:30px;
+  }
 }
-.large_button:hover{
-    transform: scale(1.05);
-    float: left;
-    box-sizing: border-box;
-}
-
-
