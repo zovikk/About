@@ -63,9 +63,6 @@ li {
     width: 8em;
     text-align: center;
 }
-.dropdown li:hover {
-    background-color: #4c9e9e;
-}
 .services:hover .dropdown {
     display: block;
 }
@@ -107,9 +104,6 @@ input[type=checkbox]:checked ~ .menu{
     top: 30px;
     transform: translateX(35%);
 }
-.dropdown li:hover {
-    background-color: #4c9e9e;
-}
 }
 .social img:hover{
     transform: scale(1.1);
@@ -133,7 +127,6 @@ input[type=checkbox]:checked ~ .menu{
     margin-left: 80px;
     max-width: 720px;
     width: 80%;
-    font-family: Georgia, Times, 'Times New Roman', serif;
     color: #fff;
     border-style: hidden;
     background: linear-gradient(90deg, #FC466B, #3F5EFB);
@@ -147,7 +140,6 @@ input[type=checkbox]:checked ~ .menu{
     max-width: 650px;
     width: 80%;
     color: #fff;
-    font-family: Avenir, sans-serif;
     font-size: x-large;
     border-style: hidden;
     background: linear-gradient(90deg, #FC466B, #3F5EFB);
@@ -161,8 +153,8 @@ input[type=checkbox]:checked ~ .menu{
     width: 50%;
     grid-area: b;
     align-self: start;
+     z-index: -1;
 }
-
 .work_with img{
     width: 90px;
     height: 90px;
@@ -175,6 +167,104 @@ input[type=checkbox]:checked ~ .menu{
     border-radius: 12px;
     padding: 7px;
 }
+.conteiner{
+    margin-top: 150px;
+    margin-bottom:150px;
+    display: flex;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 2rem;
+    padding-bottom: 2rem;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-decoration: none;
+}
+#div-block-2 {
+  display: block;
+  width: 100%;
+  justify-content: space-between;
+}
+.Pacman{
+    display: flex;
+    justify-content: flex-start;
+}
+.Pacman img{
+    margin-left: 70px;
+}
+.content {
+    color: #fff;
+    font-family: Avenir, sans-serif;
+    max-width: 1100px;
+    font-size: x-large;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    border: 5px solid #272b2b;
+}
+.content img{
+     margin: 5px 0px 0px 0px;
+}
+.Text_par{
+    margin-left: 20px;
+}
+#Top{
+    margin-left: 20px;
+    margin-top: 7px;
+}
+.Top2{
+    border-top: 5px solid #272b2b;
+    border-bottom: 5px solid #272b2b;
+}
+#Main2,#list1{
+    margin-left: 20px;
+    margin-top: 7px;
+}
+}
+#loc{
+    margin-left: 20px;
+    margin-top: 7px;
+    margin-bottom: 2px;
+}
+.the_end{
+    margin-top; 150px;
+    margin-bottom: 100px;
+    color: #fff;
+}
+.the_end button{
+    border-style: hidden;
+    background: linear-gradient(90deg, #FC466B, #3F5EFB);
+    border-radius: 12px;
+    padding: 7px;
+    font-size: x-large;
+    color: #fff;
+}
+.the_end button: hover{
+    transform: translateX(35%);
+}
+.footer-wrapper {
+  background: linear-gradient(90deg, #FC466B, #3F5EFB);
+}
+.text-block-4 {
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: #fff;
+  text-align: center;
+}
+.col-lg-6{
+ margin-top: 30px;
+}
+.button_cont{
+    margin-top: 70px;
+}
+.the_end button:hover{
+     color: #fff
+     transition: 0.6s ease;
+     transform: scale(1.15);
+}
 @media only screen and (max-width: 1200px) {
   .hero_image {
     transform: translate(-70px,80px);
@@ -183,13 +273,26 @@ input[type=checkbox]:checked ~ .menu{
     -moz-transform: translate(-70px,80px);
     transition: 1s ease;
     }
+  .content{
+    max-width: 700px;
+    font-size: large;
+    transition: 1s ease;
+  }
+  .content img{
+     width: 30px;
+  }
+  .Pacman{
+    margin-left: 134px;
+  }
 }
 @media only screen and (max-width: 1100px) {
   .heading {
   font-size: large;
+  transition: 1s ease;
   }
   .text_block{
   font-size: large;
+  transition: 1s ease;
   }
   .work_with{
     max-width: 400px;
@@ -202,7 +305,7 @@ input[type=checkbox]:checked ~ .menu{
     transition: 1s ease;
   }
 }
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 761px) {
   .hero_image {
     margin-top: -150px;
     margin-left: 120px;
@@ -227,5 +330,14 @@ input[type=checkbox]:checked ~ .menu{
   }
   .work_with{
     margin-top:30px;
+  }
+  .content{
+    max-width: 500px;
+    font-size: medium;
+    transition: 1s ease;
+  }
+  .Pacman{
+    justify-content: center;
+    margin-right:115px;
   }
 }

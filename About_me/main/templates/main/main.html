@@ -24,15 +24,15 @@
        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
        <!-- NAVIGATION MENUS -->
        <div class="menu">
-         <li><a href="/">About</a></li>
+         <li><a href="#div-block-2">About</a></li>
          <li><a href="/">Blog</a></li>
          <li><a class="last" href="/">Contact</a></li>
            <div class="social">
                <a href="https://github.com/zovikk" target="_blank">
                    <img src="{% static 'main/images/iconmonstr-github-1.svg' %}" alt="Git" width="30" height="30"/>
                </a>
-               <a href="http://instagram.com/zovi.kk" target="_blank">
-                   <img src="{% static 'main/images/instagram-circle.svg' %}" alt="Inst" width="30" height="30"/>
+               <a href="mailto:zovik1999zz@gmail.com" target="_blank">
+                   <img src="{% static 'main/images/gmail-icon-2.svg' %}" alt="Gmail" width="30" height="30"/>
                </a>
                <a href="https://vk.com/zovikd" target="_blank">
                    <img src="{% static 'main/images/vk-1.svg' %}" alt="Vk" width="30" height="30"/>
@@ -63,44 +63,68 @@
     <img src="{% static 'main/images/css-3.svg' %}" alt="CSS"/>
     <img src="{% static 'main/images/html5-2.svg' %}" alt="HTML"/>
 </div>
-<div class="content">
-    <div class="Main_me">
-        <h2 class="Top">Коротко обо мне</h2>
-        <p class="paragraph-1">
-            Мне нравится создавать и организовывать, будь это программное обеспечение или что-либо.
-            <br>
-        </p>
-        <p class="paragraph-2">
-            Начал изучать Python в конце 2021 года для студенческого проекта по оптимизации
-            и поймал себя на мысли, что программирование - это интересно.
-        </p>
-        <p class="paragraph-3">
-            Данный сайт, будет моей первой работой в портфолио на
-            <a class="link" href="https://github.com/zovikk">GitHub,</a>
-            которое я буду постепенно пополнять.
-        </p>
-        <p class="paragraph-4">
-            Последние свои новости я буду выклыдвать во вкладке
-            <a class="link" href="/">Blog</a>.
-        </p>
-        <p class="paragraph-5">
-            В свободное время я люблю заниматься спортом, готовить и
-            участвовать в походах.
-        </p>
-    <div class="location">
-        <p class="loc">
-            Текущее местоположение: Россия, Томск
-        </p>
+<div class="conteiner">
+    <div id="div-block-2">
+        <div class="Pacman">
+            <img src="{% static 'main/images/pacman-svgrepo-com(1).svg' %}" width="60">
+            <img src="{% static 'main/images/pacman-svgrepo-com.svg' %}" width="60">
+            <img src="{% static 'main/images/blue-circle-svgrepo-com.svg' %}" width="30">
+        </div>
     </div>
-    <div class="Top2">
-        <h3 class="Main2">Интересующие меня проекты и возможности</h3>
-        <ul class="list1">
-            <li>Программное обеспечение, которое позволяет креативить</li>
-            <li>Веб-разработка</li>
-        </ul>
+    <div class="content">
+        <h2 id="Top">Коротко обо мне <img src="{% static 'main/images/ok-svgrepo-com.svg' %}" width="50"></h2>
+        <div class="Text_par">
+            <p class="paragraph-1">
+                Мне нравится создавать и организовывать, будь это программное обеспечение или что-либо.
+                <br>
+            </p>
+            <p class="paragraph-2">
+                Начал изучать Python в конце 2021 года для студенческого проекта по оптимизации
+                и поймал себя на мысли, что программирование - это интересно.
+            </p>
+            <p class="paragraph-3">
+                Данный сайт, будет моей первой работой в портфолио на
+                <a class="link" href="https://github.com/zovikk">GitHub,</a>
+                которое я буду постепенно пополнять.
+             </p>
+            <p class="paragraph-4">
+                Последние свои новости я буду выкладывать во вкладке
+                <a class="link" href="/">Blog</a>.
+            </p>
+            <p class="paragraph-5">
+                <img src="{% static 'main/images/cauldron-cook-svgrepo-com.svg' %}" width="40">
+                В свободное время я люблю заниматься спортом, готовить и
+                участвовать в походах. <img src="{% static 'main/images/basketball-sport-team-svgrepo-com.svg' %}" width="40">
+            </p>
+        </div>
+        <div class="Top2">
+            <h3 id="Main2">Интересующие меня проекты и возможности  <img src="{% static 'main/images/growth-svgrepo-com.svg' %}" width="40"></h3>
+            <ul id="list1">
+                <li>Программное обеспечение, которое позволяет креативить</li>
+                <li>Веб-разработка</li>
+            </ul>
+        </div>
+        <div class="location">
+            <p id="loc">
+                Текущее местоположение: Россия, Томск <img src="{% static 'main/images/location-svgrepo-com.svg' %}" width="40">
+            </p>
+        </div>
     </div>
-    </div>
-
 </div>
+<div class="the_end text-center">
+    <h1 class="logo-5">ZoViK</h1>
+    <h1 class="display-5 fw-bold">Студент самоучка</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Я всегда открыт новому, у меня достаточно сил и терпения опробовать, и осуществить как можно больше увлекательных проектов. С огромным удовольствием приму участие в любых начинаниях, связанных с разработкой!</p>
+      <div class="button_cont">
+        <button type="button" class="btn">Контакты</button>
+      </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="footer-wrapper">
+      <div class="text-block-4">Разработано с трепетом и вниманием к деталям.</div>
+    </div>
+</footer>
 </body>
 </html>
