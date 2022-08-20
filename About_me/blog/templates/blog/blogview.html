@@ -1,0 +1,22 @@
+{% extends 'blog/blog.html' %}
+
+{% block title %}Blog{% endblock %}
+
+{% block content %}
+<div class="New" align="center">
+    <h1 id="head">Личный блог</h1>
+    <a class="btn-btn" href="Add/"><button type="button" class="btn btn-outline-secondary">Добавить новость</button></a>
+    {% if news %}
+        {% for el in news %}
+            <div class="mark_element">
+                <div class="element">
+                    <h3>{{ el.title}}</h3>
+                    <p>{{ el.full_text }}</p>
+                </div>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>Блог пуст!</p>
+    {% endif %}
+</div>
+{% endblock %}
