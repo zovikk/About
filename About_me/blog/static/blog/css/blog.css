@@ -131,9 +131,11 @@ input[type=checkbox]:checked ~ .menu{
     border-radius: 12px;
     padding: 7px;
 }
-.element{
+.mark_element{
     max-width: 761px;
-    margin-bottom: 50px;
+}
+.element {
+    max-width: 761px;
     border: 5px solid #272b2b;
     border-radius: 12px;
     padding: 7px;
@@ -153,9 +155,16 @@ input[type=checkbox]:checked ~ .menu{
   color: #fff;
   text-align: center;
 }
+.like{
+    margin-right: 650px;
+}
 @media only screen and (max-width: 820px) {
     .element{
         max-width: 412px;
+        transition: 1s ease;
+    }
+    .like{
+        margin-right: 320px;
         transition: 1s ease;
     }
 }
